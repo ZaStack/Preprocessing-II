@@ -1,3 +1,17 @@
+@keyframes button {
+  0% {
+    background-color: #17A2B8;
+  }
+  25% {
+    background-color: #FFEBCD;
+  }
+  50% {
+    background-color: #C0C0C0;
+  }
+  100% {
+    background-color: #212529;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -374,6 +388,7 @@ img {
   font-size: 1.4rem;
   border-radius: 10px;
   color: #FFFFFF;
+  animation: button 10s infinite;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination button {
