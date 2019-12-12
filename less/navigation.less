@@ -6,6 +6,8 @@
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+
     .border-container {
         border-bottom: 1.5px dashed @navigation-border;
         width: 200%;
@@ -17,11 +19,22 @@
     align-items: center;
     height: 8vh;
     width: 100%;
-    // padding: 0 30%;
+
+    @media @mobile{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     ul {
       width: 30%;
       display: flex;
       justify-content: space-between;
+
+        @media @mobile{
+            width: 100%;
+            justify-content: space-around;
+        }
+
       li {
         a {
           text-decoration: none;
